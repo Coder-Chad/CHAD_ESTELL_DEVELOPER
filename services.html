@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Services</title>
+    <style>
+        body {
+            background-image: url('background_4.jpg'); /* Replace with your image path */
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* min-height: 100vh; */
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            border-radius: 10px 10px 0 0; 
+            text-align: center;
+            padding-bottom: 10px;
+        }
+         
+        nav {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 0px 0px 10px 10px; 
+            background-color: #222;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }        
+        /* .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0px;
+        } */
+        .container {
+            max-width: 1200px;
+            width: 95%;
+        }
+        h1 {
+            padding-top: 15px;
+            color: whitesmoke;
+            text-align: center;
+            /* margin-bottom: 30px; */
+        }
+        h3 {
+            /* padding-top: 15px; */
+            font-size: 2rem;
+            color: whitesmoke;
+            text-align: center;
+
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-box {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .service-box h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.4em;
+        }
+        .service-box p {
+            color: #34495e;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <header>
+            <h1>CHAD ESTELL</h1>
+            <p>Software Developer</p>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="index.html" data-section="about">About</a></li>
+                <li><a href="services.html" data-section="services">Services</a></li>
+                <!-- <li><a href="#" class="nav-link" data-section="portfolio">Portfolio</a></li> -->
+                <li><a href="contact.html" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+
+        <h3>My Developer Services</h3>
+        <div class="services-grid" id="services-container">
+            <!-- Services will be dynamically inserted here -->
+        </div>
+    </div>
+
+
+
+    <script>
+        // Array of services
+        const services = [
+            {
+                title: "Real Estate Software Development",
+                description: "Custom property management systems, automated listing platforms, and client interaction solutions for real estate agencies."
+            },
+            {
+                title: "AI-Powered Chatbot Development",
+                description: "Intelligent conversational AI for customer support and virtual assistants for various industries, including property inquiries."
+            },
+            {
+                title: "Machine Learning for Property Valuation",
+                description: "Predictive analytics models for real estate market trends and AI-driven automated property appraisal systems."
+            },
+            {
+                title: "Personalized Recommendation Systems",
+                description: "AI-driven recommendation engines for real estate, e-commerce, and content platforms, enhancing user experience."
+            },
+            {
+                title: "Full-Stack Web Application Development",
+                description: "End-to-end web application development with intuitive UIs and scalable backend systems for high-volume data processing."
+            },
+            {
+                title: "AI Integration Services",
+                description: "Seamless integration of AI and machine learning capabilities into existing software systems to enhance functionality and efficiency."
+            }
+        ];
+
+        // Function to create a service box
+        function createServiceBox(service) {
+            const serviceBox = document.createElement('div');
+            serviceBox.className = 'service-box';
+            serviceBox.innerHTML = `
+                <h2>${service.title}</h2>
+                <p>${service.description}</p>
+            `;
+            return serviceBox;
+        }
+
+        // Function to render all services
+        function renderServices() {
+            const servicesContainer = document.getElementById('services-container');
+            services.forEach(service => {
+                servicesContainer.appendChild(createServiceBox(service));
+            });
+        }
+
+        // Render services when the page loads
+        window.onload = renderServices;
+    </script>
+</body>
+</html>
