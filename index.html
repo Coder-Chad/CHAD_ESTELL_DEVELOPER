@@ -4,178 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHAD ESTELL - Software Developer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        nav {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-        }
-        nav ul {
-            padding: 0;
-            list-style-type: none;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 0px;
-        }
-        .section {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
-        .portfolio-item {
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-        }
-        form button {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-        }
-        #about {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        #about::before {
-            content: "";
-            background-image: url('background_4.jpg'); /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0.9;
-            z-index: -1;
-        }
-        #about h2, #about p {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 10px auto;
-        }
-        .justified-text {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-        @media (max-width: 600px) {
-            .container {
-                width: 95%;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <header>
-            <h1>CHAD ESTELL</h1>
-            <p>Software Developer</p>
-        </header>
     
-        <nav>
-            <ul>
-                <li><a href="#" data-section="about">About</a></li>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the new CSS file -->
+
+</head>
+<body style="padding-bottom: 20px;" class="bg-gray-800 flex justify-center items-center">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 90%; flex-direction: column; margin-top: 0px;">
+        <header style="background-color: rgba(34, 34, 34, 0.7); margin: 0; padding-bottom: 15px; width: 100%; border: 2px solid #FF3B5C; border-bottom: 0px; border-top-right-radius: 10px;">
+            <h1 style="font-size: 3rem; font-style: Roboto;">CHAD ESTELL</h1>
+            <p style="padding-top: 0px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: whitesmoke;">Software Engineer</p>
+        </header>
+        
+        <nav style="max-width: 1800px; padding-top: 20px; padding-bottom: 15px; margin: 0px; margin-bottom: 20px; width: 100%; border: 2px solid #FF3B5C; border-bottom-left-radius: 10px; border-right-radius: 10px; border-top: 0px; background-color: rgba(34, 34, 34, 0.7);">
+            <ul style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px; color: whitesmoke;" >
+                <li><a href="index.html" data-section="about">About</a></li>
                 <li><a href="services.html" data-section="services">Services</a></li>
-                <!-- <li><a href="#" class="nav-link" data-section="portfolio">Portfolio</a></li> -->
                 <li><a href="contact.html" data-section="contact">Contact</a></li>
             </ul>
         </nav>
-    
-        <section id="about" class="section active">
-            <h2>About Me</h2>
-            <p class="justified-text">I'm a versatile software developer with a passion for pushing technological boundaries. With over 4 years of specialized experience in Real Estate software development, I've engineered robust solutions that streamline property management, automate listing processes, and enhance client interactions. My expertise spans from crafting intuitive user interfaces to developing complex backend systems that handle high-volume transactions and data analysis.
-                
-                <br/><br/>In recent years, I've delved deep into the cutting-edge realm of AI agents, developing intelligent systems that revolutionize user experiences. My work includes creating conversational AI for customer support, implementing machine learning algorithms for predictive property valuation, and designing autonomous agents for personalized property recommendations.
-                
-                <br/><br/>Combining my real estate industry knowledge with AI innovation, I bridge the gap between traditional software development and future-forward technologies. My goal is to create transformative solutions that redefine how we interact with both digital and physical spaces.</p>
-        </section>
 
-        <section id="services" class="section">
-            <h2>Services</h2>
-            <ul>
-                <li>Web Application Development</li>
-                <li>Mobile App Development</li>
-                <li>Cloud Solutions</li>
-                <li>API Development and Integration</li>
-                <li>Database Design and Optimization</li>
-            </ul>
-        </section>
+        <section class="section">
+            <div class="flex flex-col lg:flex-row items-start justify-center space-y-4 lg:space-y-0 lg:space-x-4">
+                <img style="border-radius: 10px; border: 2px solid #FF3B5C;" class="w-full lg:w-1/4 max-w-[370px] h-auto rounded-lg" src="images/profile.jpg" alt="Chad Estell">                
+                <div style="border: 2px solid #FF3B5C;" class="lg:w-1/2 max-w-[800px] rounded-lg">
+                    <h2 class="text-2xl font-bold mb-0 pt-4 text-purple-500 text-center">About Me</h2>
+                    <p class="text-justify bg-black bg-opacity-60 text-white p-4 rounded-lg max-w-full mx-auto mb-5">
+                        I'm a versatile software engineer with a passion for pushing technological boundaries. With just over 10 years of specialized experience with multiple languages and frameworks, I've created a variety of applications, from simple web apps to complex backend systems. My expertise spans from crafting user interfaces to developing complex backend systems and data analysis systems.
+                        
+                        <br/><br/>Most recently, I've delved into cutting-edge AI agents, with a focus on creating helpful and intelligent systems that revolutionize user experiences. I have a deep curiosity for creating conversational AI for customer support, implementing machine learning algorithms for predictive property valuation, as well as creating specialized back-end systems for innovative real time real estate data analysis.
+                        
+                        <br/><br/>With my real estate industry knowledge, I bridge the gap between traditional software development and future-forward technologies. My goal is to create flexible and scalable solutions that redefine how we interact with both digital and physical spaces.
 
-        <section id="portfolio" class="section">
-            <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <h3>E-commerce Platform</h3>
-                <p>A fully responsive e-commerce platform built with React and Node.js, featuring secure payments and inventory management.</p>
+                        <br/><br/>NOTE: I provide free consultations where you'll gain valuable insights into the potential challenges we'll face in completing your project. You'll gain an understanding of my expertise firsthand, allowing you to make an informed decision about our potential collaboration. This no-obligation session offers a clear understanding of how my services can benefit you.
+                    </p>
+                </div>
+                <img style="border-radius: 10px; border: 2px solid #FF3B5C;" class="w-full lg:w-1/4 max-w-[370px] h-auto rounded-lg mb-4" src="images/colourful_system_scaled_down.jpg" alt="A Great Computer">
             </div>
-            <div class="portfolio-item">
-                <h3>Task Management App</h3>
-                <p>A cross-platform mobile app developed using React Native, helping users organize and prioritize their daily tasks.</p>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
         </section>
     </div>
 

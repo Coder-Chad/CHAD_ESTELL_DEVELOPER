@@ -4,147 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
-    <style>
-        body {
-            background-image: url('background_4.jpg'); /* Replace with your image path */
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            margin: 0px;
-            padding-top: 20px;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            align-items: center;
-            /* min-height: 100vh; */
-
-
-            /* display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 20px;
-            min-height: 100vh;
-            background-image: url('background_4.jpg');
-            font-family: Arial, sans-serif; */
-            /* background-color: #222; */
-        }
-        header {
-            background-color: #222;
-            color: #fff;
-            width: 100%;
-            border-radius: 10px 10px 0 0; 
-            text-align: center;
-            padding-bottom: 10px;
-        }
-         
-        nav {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            width: 100%;
-            border-radius: 0px 0px 10px 10px; 
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-        }
-        nav ul {
-            padding: 0;
-            list-style-type: none;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }        
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            max-width: 1200px;
-            width: 95%;
-            margin: 0 auto;
-        }
-        h1 {
-            margin-top: 0px;
-            padding-top: 15px;
-            color: #fff;
-            text-align: center;
-            /* margin-bottom: 30px; */
-        }
-        h2 {
-            /* padding-top: 30px; */
-            color: #222;
-            text-align: center;
-            /* margin-bottom: 30px; */
-        }
-
-        .contact-box {
-            background-color: #fff;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 90%;
-            transition: transform 0.3s ease;
-            margin-top: 20px; /* Add some top margin */
-        }        
-        .contact-box:hover {
-            transform: translateY(-5px);
-        }
-
-        /* h1 {
-            color: #2c3e50;
-            margin-top: 0;
-            text-align: center;
-        } */
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 10px 0;
-            color: #34495e;
-        }
-        .contact-info strong {
-            color: #2c3e50;
-        }
-        .quote {
-            font-style: italic;
-            color: #7f8c8d;
-            text-align: center;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #ecf0f1;
-        }
-        .author {
-            font-weight: bold;
-            color: #34495e;
-            margin-top: 10px;
-            text-align: right;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>CHAD ESTELL</h1>
-            <p>Software Developer</p>
+<body class="bg-gray-800 flex justify-center items-center">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 90%; flex-direction: column; margin-top: 0px;">
+        <header style="margin: 0; padding-bottom: 15px; width: 100%; border: 2px solid #FF3B5C; border-bottom: 0px; border-top-right-radius: 10px; background-color: rgba(34, 34, 34, 0.7);">
+            <h1 style="font-size: 3rem; font-style: Roboto;">CHAD ESTELL</h1>
+            <p style="padding-top: 0px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: whitesmoke;">Software Engineer</p>
         </header>
-    
-        <nav>
-            <ul>
+        
+        <nav style="max-width: 1800px; padding-top: 20px; padding-bottom: 15px; margin: 0px; margin-bottom: 20px; width: 100%; border: 2px solid #FF3B5C; border-bottom-left-radius: 10px; border-right-radius: 10px; border-top: 0px; background-color: rgba(34, 34, 34, 0.7);">
+            <ul style="padding-top: 0px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: whitesmoke;">
                 <li><a href="index.html" data-section="about">About</a></li>
                 <li><a href="services.html" data-section="services">Services</a></li>
-                <!-- <li><a href="#" class="nav-link" data-section="portfolio">Portfolio</a></li> -->
                 <li><a href="contact.html" data-section="contact">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="contact-box" id="contact-container">
-            <!-- Contact information will be dynamically inserted here -->
+        <div style="border: 2px solid #FF3B5C; border-radius: 10px; padding: 20px; margin: 20px; background-color: rgba(34, 34, 34, 0.6); color: white; max-width: 800px; text-align: center;">
+            <p>
+                <h4 class="text-purple-500" style="font-size: 2rem; font-weight: 400;">Contact Information</h4>
+                <div class="contact-info" style="font-size: 1.3rem; font-weight: 400;">
+                    <p style="color: white"><span style="color: white; font-weight: 400">Name: </span>Chad Estell</p>
+                    <p style="color: white"><span style="color: white; font-weight: 400">Email: </span>cvestell@protonmail.com</p>
+                    <p style="color: white"><span style="color: white; font-weight: 400">Phone:</span>+1 (250) 986-2714</p>
+                </div>
+                <div class="quote text-purple-500" style="font-size: 1.3rem; font-weight: 400;">
+                    "Talk is cheap. Show me the code."
+                    <p class="text-purple-500">Linus Torvalds</p>
+                </div>
+            </p>
         </div>
-    
     </div>
 
 
