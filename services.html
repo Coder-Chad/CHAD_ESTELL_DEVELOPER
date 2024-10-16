@@ -15,7 +15,7 @@
             <p style="padding-top: 0px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: whitesmoke;">Software Engineer</p>
         </header>
         
-        <nav style="max-width: 1800px; padding-top: 20px; padding-bottom: 15px; margin: 0px; width: 100%; border: 2px solid #FF3B5C; border-bottom-left-radius: 10px; border-right-radius: 10px; border-top: 0px; background-color: rgba(34, 34, 34, 0.7);">
+        <nav style="max-width: 1800px; padding-top: 20px; padding-bottom: 15px; margin: 0px; width: 100%; border: 2px solid #FF3B5C; border-bottom-left-radius: 10px; border-top: 0px; background-color: rgba(34, 34, 34, 0.7);">
             <ul style="padding-top: 0px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: whitesmoke;" >
                 <li><a href="index.html" data-section="about">About</a></li>
                 <li><a href="services.html" data-section="services">Services</a></li>
@@ -53,55 +53,6 @@
     </div>
 
     <script>
-        // Array of services
-        const services = [
-            {
-                title: "Real Estate Software Development",
-                description: "Custom property management systems, automated listing platforms, and client interaction solutions for real estate agencies."
-            },
-            {
-                title: "AI-Powered Chatbot Development",
-                description: "Intelligent conversational AI for customer support and virtual assistants for various industries, including property inquiries."
-            },
-            {
-                title: "Machine Learning for Property Valuation",
-                description: "Predictive analytics models for real estate market trends and AI-driven automated property appraisal systems."
-            },
-            {
-                title: "Personalized Recommendation Systems",
-                description: "AI-driven recommendation engines for real estate, e-commerce, and content platforms, enhancing user experience."
-            },
-            {
-                title: "Full-Stack Web Application Development",
-                description: "End-to-end web application development with intuitive UIs and scalable backend systems for high-volume data processing."
-            },
-            {
-                title: "AI Integration Services",
-                description: "Seamless integration of AI and machine learning capabilities into existing software systems to enhance functionality and efficiency."
-            }
-        ];
-
-        // Function to create a service box
-        function createServiceBox(service) {
-            const serviceBox = document.createElement('div');
-            serviceBox.className = 'service-box';
-            serviceBox.innerHTML = `
-                <h2 style="color: #FF3B5C; background-color: rgba(34, 34, 34, 0.8); font-size: 1.5rem; font-weight: 400; margin-bottom: 10px; text-align: center;">${service.title}</h2>
-                <p style="text-align: center; background-color: rgba(34, 34, 34, 0.8); font-size: 1rem; font-weight: 400; margin-bottom: 10px;">${service.description}</p>
-            `;
-            return serviceBox;
-        }
-
-        // Function to render all services
-        function renderServices() {
-            const servicesContainer = document.getElementById('services-container');
-            services.forEach(service => {
-                servicesContainer.appendChild(createServiceBox(service));
-            });
-        }
-
-        // Render services when the page loads
-        window.onload = renderServices;
     </script>
 </body>
 </html>

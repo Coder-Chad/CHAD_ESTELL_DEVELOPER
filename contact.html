@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-gray-800 flex justify-center items-center">
     <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 90%; flex-direction: column; margin-top: 0px;">
@@ -27,9 +28,21 @@
             <p>
                 <h4 class="text-purple-500" style="font-size: 2rem; font-weight: 400;">Contact Information</h4>
                 <div class="contact-info" style="font-size: 1.3rem; font-weight: 400;">
-                    <p style="color: white"><span style="color: white; font-weight: 400">Name: </span>Chad Estell</p>
-                    <p style="color: white"><span style="color: white; font-weight: 400">Email: </span>cvestell@protonmail.com</p>
-                    <p style="color: white"><span style="color: white; font-weight: 400">Phone:</span>+1 (250) 986-2714</p>
+                    <p style="color: white">
+                        <span style="color: white; font-weight: 400">Name: </span>Chad Estell
+                    </p>
+                    <p style="color: white; cursor: pointer">
+                        <span style="color: white; font-weight: 400"><i class="fas fa-copy" style="margin-right: 5px;"></i> Email 1: </span>
+                        <span class="copy-email" onclick="copyToClipboard('cvestell@protonmail.com')">
+                            cvestell@protonmail.com
+                        </span>
+                    </p>
+                    <p style="color: white; cursor: pointer">
+                        <span style="color: white; font-weight: 400"><i class="fas fa-copy" style="margin-right: 5px;"></i> Email 2:</span>
+                        <span class="copy-email" onclick="copyToClipboard('cvestell@gmail.com')">
+                            cvestell@gmail.com
+                        </span>
+                    </p>
                 </div>
                 <div class="quote text-purple-500" style="font-size: 1.3rem; font-weight: 400;">
                     "Talk is cheap. Show me the code."
@@ -44,8 +57,8 @@
         // Contact information
         const contactInfo = {
             name: "Chad Estell",
-            email: "cvestell@protonmail.com",
-            phone: "+1 (250) 986-2714"
+            email1: "cvestell@protonmail.com",
+            email2: "cvestell@gmail.com",
         };
 
         // Linus Torvalds quote
@@ -58,8 +71,8 @@
                 <h2>Contact Information</h2>
                 <div class="contact-info">
                     <p><strong>Name:</strong> ${contactInfo.name}</p>
-                    <p><strong>Email:</strong> ${contactInfo.email}</p>
-                    <p><strong>Phone:</strong> ${contactInfo.phone}</p>
+                    <p><strong>Email 1:</strong> ${contactInfo.email1}</p>
+                    <p><strong>Email 2:</strong> ${contactInfo.email2}</p>
                 </div>
                 <div class="quote">
                     "${quote}"
@@ -70,6 +83,15 @@
 
         // Render contact box when the page loads
         window.onload = createContactBox;
+
+        // Function to copy text to clipboard
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied to clipboard: ' + text);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
     </script>
 </body>
 </html>
