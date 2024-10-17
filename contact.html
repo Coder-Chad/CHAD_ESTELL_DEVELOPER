@@ -6,10 +6,12 @@
     <title>Contact Information</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" defer>
+    <!-- Update Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32"> <!-- Link to the favicon -->
 </head>
-<body class="bg-gray-800 flex justify-center items-center">
+<body class="flex justify-center items-center">
     <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 90%; flex-direction: column; margin-top: 0px;">
         <header style="margin: 0; padding-bottom: 15px; width: 100%; border: 2px solid #FF3B5C; border-bottom: 0px; border-top-right-radius: 10px; background-color: rgba(34, 34, 34, 0.7);">
             <h1 style="font-size: 3rem; font-style: Roboto;">CHAD ESTELL</h1>
@@ -18,16 +20,15 @@
         
         <nav style="max-width: 1800px; padding-top: 20px; padding-bottom: 15px; margin-bottom: 20px; width: 100%; border: 2px solid #FF3B5C; border-bottom-left-radius: 10px; border-top: 0px; background-color: rgba(34, 34, 34, 0.7);">
             <ul style="font-size: 1.2rem; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: darkgray;" >
-                <li><a href="index.html" data-section="about">About</a></li>
-                <li><a href="services.html" data-section="services">Services</a></li>
-                <li><a href="contact.html" data-section="contact">Contact</a></li>
+                <li><a href="index.html" >About</a></li>
+                <li><a href="services.html" >Services</a></li>
+                <li><a href="contact.html" >Contact</a></li>
             </ul>
         </nav>
 
         <div style="border: 2px solid #FF3B5C; border-radius: 10px; padding: 20px; margin: 0px; background-color: rgba(34, 34, 34, 0.6); color: white; max-width: 100%; text-align: center; margin-bottom: 20px;">
-            <p>
                 <h4 style="color: darkgray; font-size: 2rem; font-weight: 400;">Contact Information</h4>
-                <div class="contact-info" style="font-size: 1.3rem; font-weight: 400;">
+                <div style="font-size: 1.3rem; font-weight: 400;">
                     <p style="color: darkgray">
                         <span style="color: darkgray; font-weight: 400">Name: </span>Chad Estell
                     </p>
@@ -46,42 +47,11 @@
                     "Talk is cheap. Show me the code."
                     <p class="text-purple-500">Linus Torvalds</p>
                 </div>
-            </p>
         </div>
     </div>
 
 
-    <script>
-        // Contact information
-        const contactInfo = {
-            name: "Chad Estell",
-            email1: "cvestell@protonmail.com",
-            email2: "cvestell@gmail.com",
-        };
-
-        // Linus Torvalds quote
-        const quote = "Talk is cheap. Show me the code.";
-
-        // Function to create the contact box content
-        function createContactBox() {
-            const contactContainer = document.getElementById('contact-container');
-            contactContainer.innerHTML = `
-                <h2>Contact Information</h2>
-                <div class="contact-info">
-                    <p><strong>Name:</strong> ${contactInfo.name}</p>
-                    <p><strong>Email 1:</strong> ${contactInfo.email1}</p>
-                    <p><strong>Email 2:</strong> ${contactInfo.email2}</p>
-                </div>
-                <div class="quote">
-                    "${quote}"
-                    <p class="author">- Linus Torvalds</p>
-                </div>
-            `;
-        }
-
-        // Render contact box when the page loads
-        window.onload = createContactBox;
-
+    <script defer>
         // Function to copy text to clipboard
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(() => {

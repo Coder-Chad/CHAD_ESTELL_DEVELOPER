@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHAD ESTELL - Software Developer</title>
+    <title>CHAD ESTELL - Software Engineer</title>
     
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the new CSS file -->
+    <link rel="stylesheet" href="styles.css" defer> <!-- Link to the new CSS file -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32"> <!-- Link to the favicon -->
 
 </head>
 <body style="padding-bottom: 20px;" class="bg-gray-800 flex justify-center items-center">
@@ -45,31 +46,7 @@
         </section>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('.section');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const sectionId = this.getAttribute('data-section');
-                    
-                    sections.forEach(section => {
-                        section.classList.remove('active');
-                    });
-                    
-                    document.getElementById(sectionId).classList.add('active');
-                });
-            });
-
-            const contactForm = document.getElementById('contact-form');
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message. I will get back to you soon!');
-                contactForm.reset();
-            });
-        });
+    <script defer>
     </script>
 </body>
 </html>
