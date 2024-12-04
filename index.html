@@ -9,22 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" defer> <!-- Link to the new CSS file -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32"> <!-- Link to the favicon -->
-
+    <script src="loadContent.js" defer></script>
 </head>
 <body style="padding-bottom: 20px;" class="bg-gray-800 flex justify-center items-center">
     <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 90%; flex-direction: column; margin-top: 0px;">
-        <header style="background-color: rgba(34, 34, 34, 0.7); margin: 0; padding-bottom: 15px; width: 100%; border: 2px solid #FF3B5C; border-bottom: 0px; border-top-right-radius: 10px;">
-            <h1 style="font-size: 3rem; font-style: Roboto;">CHAD ESTELL</h1>
-            <p style="padding-top: 0px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: whitesmoke;">Software Engineer</p>
-        </header>
+        <div id="header-placeholder" style="width: 100%;"></div>
         
-        <nav style="max-width: 1800px; padding-top: 20px; padding-bottom: 15px; margin-bottom: 20px; width: 100%; border: 2px solid #FF3B5C; border-bottom-left-radius: 10px; border-top: 0px; background-color: rgba(34, 34, 34, 0.7);">
-            <ul style="font-size: 1.2rem; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: darkgray;" >
-                <li><a href="index.html" data-section="about">About</a></li>
-                <li><a href="services.html" data-section="services">Services</a></li>
-                <li><a href="contact.html" data-section="contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="nav-placeholder" style="width: 100%; margin-bottom: 20px;">
+            <nav style="max-width: 1800px; text-align: center;">Loading navigation...</nav>
+        </div>
 
         <section class="section">
             <div class="flex flex-col lg:flex-row items-start justify-center space-y-4 lg:space-y-0 lg:space-x-4">
@@ -32,21 +25,36 @@
                 <div style="border: 2px solid #FF3B5C;" class="lg:w-1/2 max-w-[800px] rounded-lg">
                     <h2 style="color: darkgray;" class="text-3xl font-bold mb-0 pt-4 text-center">About Me</h2>
                     <p style="color: darkgray;" class="text-justify bg-black bg-opacity-60 p-4 rounded-lg max-w-full mx-auto mb-5">
-                        I'm a versatile software engineer with a passion for pushing technological boundaries. With just over 10 years of specialized experience with multiple languages and frameworks, I've created a variety of applications, from simple web apps to complex backend systems. My expertise spans from crafting user interfaces to developing complex backend systems and data analysis systems.
-                        
-                        <br/><br/>Most recently, I've delved into cutting-edge AI agents, with a focus on creating helpful and intelligent systems that revolutionize user experiences. I have a deep curiosity for creating conversational AI for customer support, implementing machine learning algorithms for predictive property valuation, as well as creating specialized back-end systems for innovative real time real estate data analysis.
-                        
-                        <br/><br/>With my real estate industry knowledge, I bridge the gap between traditional software development and future-forward technologies. My goal is to create flexible and scalable solutions that redefine how we interact with both digital and physical spaces.
+                        At the intersection of technology and conscious intention, I stand as a versatile software developer 
+                        driven by a passion to transcend conventional boundaries. With over a decade of specialized experience 
+                        across multiple languages and frameworks, I've crafted applications ranging from intuitive web interfaces 
+                        to complex backend systems and data analysis platforms. Each project is an opportunity to infuse innovation 
+                        with purpose, aligning with the principles of Energy Philanthropy as inspired by Marina Jacobi.<br/><br/>
 
-                        <br/><br/>NOTE: I provide free consultations where you'll gain valuable insights into the potential challenges we'll face in completing your project. You'll gain an understanding of my expertise firsthand, allowing you to make an informed decision about our potential collaboration. This no-obligation session offers a clear understanding of how my services can benefit you.
-                    </p>
+                        In my recent endeavors, I've immersed myself in the realm of cutting-edge AI agents, focusing on 
+                        creating intelligent systems that elevate user experiences and foster positive transformation. My 
+                        curiosity leads me to develop conversational AI for resource effective customer support. I implement 
+                        complex machine learning algorithms for real-time, innovative AI agents. The projects I create are 
+                        more than technological advancements; they are contributions to a collective evolution of how we 
+                        interact with information and each other.<br/><br/>
+                        
+                        By integrating my knowledge of advanced AI agent technologies, I aim to bridge the gap between 
+                        traditional software development and visionary innovation. My goal is to create flexible, scalable 
+                        solutions that not only redefine our interaction with the digital and physical spaces but also 
+                        resonate with the greater good. Through this synergy, I believe we can co-create platforms that 
+                        serve communities, empower individuals, and contribute to a more harmonious world.<br/><br/>
+                        
+                        In the spirit of Energy Philanthropy, I offer free consultations designed to provide valuable 
+                        insights into the potential challenges and opportunities within your project. This collaborative 
+                        dialogue allows us to align our visions and assess how our partnership can create meaningful 
+                        impact for you and those you serve. You'll experience firsthand my commitment to excellence and 
+                        conscious collaboration, enabling you to make an informed decision about our potential journey 
+                        together. Let's connect and explore how we can co-create solutions that embody innovation, 
+                        intention, and positive energy.</p>
                 </div>
                 <img style="border-radius: 10px; border: 2px solid #FF3B5C;" class="w-full lg:w-1/4 max-w-[370px] h-auto rounded-lg mb-4" src="images/colourful_system_scaled_down.jpg" alt="A Great Computer">
             </div>
         </section>
     </div>
-
-    <script defer>
-    </script>
 </body>
 </html>

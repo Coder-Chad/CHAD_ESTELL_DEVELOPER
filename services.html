@@ -8,21 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" defer> <!-- Link to the new CSS file -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="32x32"> <!-- Link to the favicon -->
+    <script src="loadContent.js" defer></script>
 </head>
 <body class="bg-gray-800 flex justify-center items-center">
     <div class="container" style="display: flex; justify-content: center; align-items: center; max-width: 90%; flex-direction: column; margin-top: 0px;">
-        <header style="margin: 0; padding-bottom: 15px; width: 100%; border: 2px solid #FF3B5C; border-bottom: 0px; border-top-right-radius: 10px; background-color: rgba(34, 34, 34, 0.7);">
-            <h1 style="font-size: 3rem; font-style: Roboto; color: darkgray;">CHAD ESTELL</h1>
-            <p style="padding-top: 0px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: darkgray;">Software Engineer</p>
-        </header>
+        <div id="header-placeholder" style="width: 100%;"></div>
         
-        <nav style="max-width: 1800px; padding-top: 20px; padding-bottom: 15px; margin: 0px; width: 100%; border: 2px solid #FF3B5C; border-bottom-left-radius: 10px; border-top: 0px; background-color: rgba(34, 34, 34, 0.7);">
-            <ul style="font-size: 1.2rem; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; color: darkgray;" >
-                <li><a href="index.html" data-section="about">About</a></li>
-                <li><a href="services.html" data-section="services">Services</a></li>
-                <li><a href="contact.html" data-section="contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="nav-placeholder" style="width: 100%; margin-bottom: 20px;">
+            <nav style="max-width: 1800px; text-align: center;">Loading navigation...</nav>
+        </div>
         
         <h3 style="color: darkgray;" class="text-white text-3xl text-center mt-10 mb-3 ">My Developer Services</h3>
         <div style="color: darkgray" class="max-w-[1800px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
